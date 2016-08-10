@@ -25,3 +25,15 @@ students[:cohort4] = 43
 students.each do |k, v|
   puts "#{k}"
 end
+
+#5
+#Increasing cohort size by 5% and display results
+def increase_sizes(s)
+  s.each do |k, v|
+    new_size = (v * 0.05) + v
+    new_size = new_size.to_i
+    s[k] = new_size
+    puts "#{k}: #{s[k]}"
+  end
+end
+increase_sizes(students)

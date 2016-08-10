@@ -46,3 +46,16 @@ end
 grocery_list = ["carrots", "toilet paper", "apples", "salmon", "rice"]
 newlist = grocery_list.sort
 grocery_list(newlist)
+
+#6
+#Deleting the salmon and outputting one last time.
+
+def grocery_list(list)
+  list.each do |item|
+    puts "* #{item}"
+  end
+end
+
+my_list = ["carrots", "toilet paper", "apples", "salmon", "rice"]
+my_list.delete("salmon")
+grocery_list(my_list)

@@ -33,3 +33,16 @@ end
 #4.
 #Display the second item in the list
 grocery_list[1]
+
+
+#5
+#Sorting the grocery list and outputting again.
+def grocery_list(list)
+  list.each do |item|
+    puts "* #{item}"
+  end
+end
+
+grocery_list = ["carrots", "toilet paper", "apples", "salmon", "rice"]
+newlist = grocery_list.sort
+grocery_list(newlist)

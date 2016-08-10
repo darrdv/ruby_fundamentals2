@@ -3,4 +3,6 @@ def convert_to_celcius(ftemp)
 end
 
 puts "Please provide a temperature in Fahrenheit: "
-to_be_converted = gets.chomp
+ftemp_provided = gets.chomp
+numeric_temp = ftemp_provided.to_i
+ctemp = convert_to_celcius(numeric_temp)

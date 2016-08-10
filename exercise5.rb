@@ -6,3 +6,4 @@ puts "Please provide a temperature in Fahrenheit: "
 ftemp_provided = gets.chomp
 numeric_temp = ftemp_provided.to_i
 ctemp = convert_to_celcius(numeric_temp)
+puts "That same temperature in Celcius is : #{ctemp}."

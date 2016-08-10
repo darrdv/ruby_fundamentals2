@@ -24,12 +24,10 @@ grocery_list.count
 #3.
 grocery_list = ["carrots", "toilet paper", "apples", "salmon", "rice"]
 
-grocery_list.each do |item|
-  if item == "bananas"
-    puts "You need to pick up bananas."
-  else
-    puts "You don't need to pick up bananas today."
-  end
+if grocery_list.include?("bananas")
+  puts "You need to pick up bananas."
+else
+  puts "You don't need to pick up bananas today."
 end
 
 #4.

@@ -15,3 +15,13 @@ def display_cohort(s)
 end
 
 display_cohort(students)
+
+#3
+#Adding cohort 4, with 43 students to the hash.
+students[:cohort4] = 43
+
+#4
+#Outputting the cohort names only.
+students.each do |k, v|
+  puts "#{k}"
+end

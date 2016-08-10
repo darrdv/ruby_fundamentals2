@@ -51,3 +51,13 @@ students.delete(:cohort2)
 display_cohort(students)
 
 #7
+#Bonus
+def calculate_total(cohorts)
+  total = 0
+  cohorts.each do |k, v|
+    total += v
+  end
+  puts "The total number of students in all cohorts is: #{total}"
+end
+
+calculate_total(students)
